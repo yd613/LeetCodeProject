@@ -13,6 +13,12 @@ public class SortUtil {
     }
 
 
+    public static void printArr(int[] arr) {
+        if (arr == null) return;
+        printArr(arr, 0, arr.length);
+    }
+
+
     public static void swap(int[] arr, int p1, int p2) {
         int temp = arr[p1];
         arr[p1] = arr[p2];
